@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Potter\Link\Provider;
 
-use \Psr\Link\LinkInterface;
+use \Psr\Link\LinkInterface, \Traversable;
 
 trait LinkProviderTrait 
 {

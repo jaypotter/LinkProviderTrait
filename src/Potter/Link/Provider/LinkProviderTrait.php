@@ -27,6 +27,17 @@ trait LinkProviderTrait
         }
     }
     
+    final public function hasLink(LinkInterface $link): bool
+    {
+        foreach ($this->links as $linked) {
+            if ($link != $linked) {
+                continue;
+            }
+            return true;
+        }
+        return false;
+    }
+    
     final protected function setLinks(array|Traversable $links): void
     {
         $this->links = $links;

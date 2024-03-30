@@ -10,6 +10,16 @@ trait LinkProviderTrait
 {
     private array $links;
     
+    final public function getFirstLink(): LinkInterface
+    {
+        return array_values($this->links)[0];
+    }
+    
+    final public function getLastLink(): LinkInterface
+    {
+        return array_values($this->reverseLinks())[0];
+    }
+    
     final public function getLinks(): array|Traversable
     {
         return $this->links ?? [];
@@ -36,6 +46,11 @@ trait LinkProviderTrait
             return true;
         }
         return false;
+    }
+    
+    private function reverseLinks(): array
+    {
+        return array_reverse($this->links);
     }
     
     final protected function setLinks(array|Traversable $links): void

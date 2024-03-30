@@ -6,6 +6,14 @@
         "php": "^8.3",
         "psr/link": "^2.0@dev"
     },
+    "suggest": {
+        "potter/link-provider-traits": "dev-main",
+        "potter/link-provider": "dev-main",
+        "potter/link-traits": "dev-main",
+        "potter/link": "dev-main",
+        "potter/traits": "dev-main",
+        "potter/framework": "dev-main"
+    },
     "license": "MIT",
     "autoload": {
         "psr-4": {

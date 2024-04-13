@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^8.3",
-        "psr/link": "^2.0@dev"
+        "psr/link": "^2.0"
     },
     "suggest": {
         "potter/link-provider-traits": "dev-main",
@@ -26,5 +26,5 @@
             "email": "j@ypotter.ca"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
